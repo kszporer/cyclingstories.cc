@@ -36,9 +36,10 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          maxWidth: 960,
           minHeight: "80vh",
-          margin: `0 auto`,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <main>{children}</main>
