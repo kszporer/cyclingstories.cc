@@ -31,15 +31,23 @@ const Image = styled.img`
 `
 const StoriesText = styled.p`
   margin: 0;
-  font-size: 90px;
+  font-size: 85px;
+  font-family: freight-display-pro, serif;
+  font-weight: 400;
+  line-height: 0.7;
 `
 const CyclingText = styled.p`
   margin: 0;
   font-size: 90px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 700;
+  line-height: 0.55;
 `
 const InfoText = styled.p`
   margin: 0;
   font-size: 40px;
+  font-family: freight-display-pro, serif;
+  font-weight: 500;
 `
 
 const IndexPage = () => (
@@ -53,7 +61,7 @@ const IndexPage = () => (
           for visual documentation<br />
           of places I’ve visited,<br />
           people I’ve met and things<br />
-          I’ve seen while cycling.<br />
+          I’ve seen while cycling<br />
         </InfoText>
       </ContainerLeft>
       <ContainerRight>

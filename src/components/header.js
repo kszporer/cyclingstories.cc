@@ -26,9 +26,11 @@ const ItemsContainer = styled.div`
 `
 
 const Item = styled(Link)`
-  font-size: 22px;
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 500;
 `
 
 const Header = () => (

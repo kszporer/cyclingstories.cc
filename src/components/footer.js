@@ -19,21 +19,25 @@ const ContainerLeft = styled.div`
 const Logo = styled.img`
   width: 93px;
   height: 40px;
-  margin-top: 1px;
+  margin-top: 4px;
 `
 
 const FooterText = styled.p`
   margin: 0;
   padding-left: 44px;
-  font-size: 16px;
   color: #888888;
+  font-size: 16px;
+  font-family: freight-display-pro, serif;
+  font-weight: 500;
 `
 
 const FooterLinks = styled.p`
   margin: 0;
   padding-right: 140px;
-  font-size: 22px;
   color: #888888;
+  font-size: 22px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 500;
 `
 
 const Link = styled.a`
