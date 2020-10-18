@@ -1,21 +1,74 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import styled from "styled-components"
+import img from "../images/home_img.png"
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2vh;
+`
+const ContainerLeft = styled.div`
+  width: 552px;
+  height: 581px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+`
+const ContainerRight = styled.div`
+  width: 552px;
+  height: 581px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+`
+const Image = styled.img`
+  width: 552px;
+  height: 414px;
+`
+const StoriesText = styled.p`
+  margin: 0;
+  font-size: 85px;
+  font-family: freight-display-pro, serif;
+  font-weight: 400;
+  line-height: 0.7;
+`
+const CyclingText = styled.p`
+  margin: 0;
+  font-size: 90px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 700;
+  line-height: 0.55;
+`
+const InfoText = styled.p`
+  margin: 0;
+  font-size: 40px;
+  font-family: freight-display-pro, serif;
+  font-weight: 500;
+`
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <Container>
+      <ContainerLeft>
+        <CyclingText>CYCLING</CyclingText>
+        <InfoText>
+          Cycling Stories is a place<br />
+          for visual documentation<br />
+          of places I’ve visited,<br />
+          people I’ve met and things<br />
+          I’ve seen while cycling<br />
+        </InfoText>
+      </ContainerLeft>
+      <ContainerRight>
+        <Image src={img} alt="Home image" />
+        <StoriesText>STORIES</StoriesText>
+      </ContainerRight>
+    </Container>
   </Layout>
 )
 
