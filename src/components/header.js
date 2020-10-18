@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import LogoImg from "../images/logo.png"
+import LogoImg from "../images/logo_header.png"
 
 const Container = styled.header`
-  height: 141px;
+  height: 12vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
